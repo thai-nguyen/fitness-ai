@@ -3,12 +3,17 @@
 | Field | Value |
 | --- | --- |
 | Phase | PHASE-00 |
-| Tracker version | 1.6 |
+| Tracker version | 1.8 |
 | Last updated | 2026-11-25 |
-| Updated by | Engineering (PH00-M01 official Tech Lead acceptance recorded) |
-| Current authorized milestone | **None for new work** — PH00-M01 `ACCEPTED`; awaiting explicit PH00-M02 GO |
-| PH00-M02 authorization | **PENDING** (not authorized) |
-| Overall phase status | `IN_PROGRESS` (Phase 0 continues; M01 closed) |
+| Updated by | Engineering (PH00-M02 ACCEPTED; M03 GO) |
+| Current authorized milestone | **PH00-M03** — Engineering Foundation |
+| PH00-M02 | **`ACCEPTED`** (Tech Lead 2026-11-25); PO ADR approval confirmed |
+| PH00-M03 authorization | **GO** after M02 local checkpoint |
+| M01 local commit | `dc5f9d2` |
+| M02 local commit | Authorized after validation (record SHA after commit) |
+| M03 commit | **NOT AUTHORIZED** |
+| Git push | **NO-GO** |
+| Overall phase status | `IN_PROGRESS` |
 
 ## Status legend
 
@@ -91,9 +96,31 @@
 
 | Field | Value |
 | --- | --- |
-| Status | `NOT_STARTED` |
-| Authorization | **PENDING** — M01 `ACCEPTED`; explicit M02 GO not yet issued |
-| Depends on | Explicit Tech Lead PH00-M02 GO (AUTH package already approved) |
+| Status | **`ACCEPTED`** |
+| Accepted by | Tech Lead |
+| Acceptance date | 2026-11-25 |
+| Project Owner ADR approval | Confirmed |
+| Authorization | Design **GO** (M01 accepted + local commit `dc5f9d2`) |
+| Depends on | M01 `ACCEPTED` + AUTH package (satisfied) |
+| Started | 2026-11-25 |
+| Engineering completed | 2026-11-25 |
+| Remediation | 2026-11-25 — [`PH00-M02-remediation-report.md`](PH00-M02-remediation-report.md) |
+| Remaining M02 blockers | None reported |
+| Next milestone | PH00-M03 |
+| M03 authorization | **GO** after M02 checkpoint |
+| Commit | Local commit authorized after validation; push **NO-GO** |
+| ADR count (actual) | **17** (0001–0017) |
+
+### Remediation findings
+
+| ID | Finding | Status |
+| --- | --- | --- |
+| F-M02-001 | ADR validation consistency | **`ACCEPTED`** |
+| F-M02-002 | Product architecture coverage | **`ACCEPTED`** |
+| F-M02-003 | Secret/config content scan | **`ACCEPTED`** (heuristic limitations preserved) |
+| F-M02-004 | Mermaid review | **`ACCEPTED`** (manual-only limitation preserved) |
+| F-M02-005 | Zero-cost deployment boundaries | **`ACCEPTED`** |
+| F-M02-006 | ADR readiness for M03 | **`ACCEPTED`** (decisions applied) |
 
 ### Planned outcomes
 
@@ -111,7 +138,7 @@
 
 | Field | Value |
 | --- | --- |
-| Status | `NOT_STARTED` |
+| Status | `IN_PROGRESS` (authorized after M02 checkpoint) |
 | Authorization | Blocked until prior milestone acceptance |
 | Depends on | PH00-M02 (layout/module boundaries); hosting/CI decision |
 
@@ -276,3 +303,5 @@ See also [`../baseline/OPEN_ISSUES.md`](../baseline/OPEN_ISSUES.md).
 | 2026-11-25 | Closure resumed after PO deposit claim; workspace still shows only authoritative/README.md; F-M01-001/`OI-001` remain `BLOCKED`; tracker v1.4 |
 | 2026-11-25 | AUTH four files verified on disk; PO approval recorded; derived docs reconciled; F-M01-001 `VALIDATED`; OI-001/007 `RESOLVED`; M01 acceptance still PENDING; M02 NO-GO; tracker v1.5 |
 | 2026-11-25 | Tech Lead officially **ACCEPTED** PH00-M01; F-M01-001..006 `ACCEPTED`; M02 authorization **PENDING**; tracker v1.6 |
+| 2026-11-25 | M02 design submitted; Tech Lead PASS WITH CONDITIONS; F-M02-001..006 remediated; ADR actual count **17**; M02 final accept PENDING; M03 NO-GO; no M02 commit; tracker v1.7 |
+| 2026-11-25 | PH00-M02 **ACCEPTED**; PO ADR approval; F-M02-001..006 `ACCEPTED`; foundation ADRs 0002–0005 accepted; direction 0006–0010/0012; M03 GO after checkpoint; tracker v1.8 |

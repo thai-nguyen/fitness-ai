@@ -45,8 +45,8 @@ A task may only be marked `ACCEPTED` after the appropriate reviewer has approved
 
 | Milestone | Status |
 | --- | --- |
-| PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25) |
-| PH00-M02 | `NOT_STARTED`; authorization **PENDING** |
+| PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25); commit `dc5f9d2` |
+| PH00-M02 | Design `IMPLEMENTED`; acceptance **PENDING** |
 
 Live detail: [`phase-00/execution-tracker.md`](phase-00/execution-tracker.md).
 

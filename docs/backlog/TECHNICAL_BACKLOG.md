@@ -5,7 +5,7 @@
 | Last updated | 2026-11-25 |
 | Source | PH00-M01 assessment + remediation |
 | PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25) |
-| Authorization note | PH00-TB-008+ remain **not authorized** until explicit PH00-M02 GO (and later milestone GOs) |
+| Authorization note | PH00-M02 GO active for TB-008/009 design only. TB-010+ remain unauthorized until later milestone GOs |
 | Product feature IDs | Historical families exist in AUTH-001 (e.g. ONB/AI/TRN/WKT); technical tasks use `PH00-TB-*` only. Full product↔task traceability deferred to M09 — **do not invent** missing mappings |
 
 ## Status vocabulary
@@ -136,7 +136,7 @@
 | Acceptance criteria | Per PH00-M02 acceptance criteria in Tech Lead brief |
 | Responsible role | Engineering (Architect) |
 | Required reviewer | Tech Lead |
-| Status | `NOT_STARTED` |
+| Status | `IMPLEMENTED` (design; M02 acceptance PENDING) |
 
 ### PH00-TB-009
 
@@ -151,7 +151,7 @@
 | Acceptance criteria | Required ADR topics covered; statuses `PROPOSED` until approved |
 | Responsible role | Engineering |
 | Required reviewer | Tech Lead |
-| Status | `NOT_STARTED` |
+| Status | `IMPLEMENTED` (ADR-0002..0016 `PROPOSED`) |
 
 ### PH00-TB-010
 
@@ -219,11 +219,11 @@
 | --- | --- |
 | Task ID | PH00-TB-014 |
 | Parent milestone | PH00-M05 |
-| Description | AI technical POCs: structured plan generation, template-first personalization, validation, memory, cards, streaming, provider abstraction, safety eval, cost/latency |
+| Description | AI technical POCs against **Ollama/Qwen 3.5 9B** (ADR-0017): structured JSON/schema, plan generation, exercise ID grounding, tool-calling or app-controlled routing fallback, memory, cards, streaming, safety, VI/EN quality, latency/TPS/concurrency/resources, timeout recovery |
 | Priority | P0 |
-| Dependencies | PH00-TB-012; synthetic datasets |
-| Deliverables | POC code under authorized M05 scope; measurement evidence |
-| Acceptance criteria | Real measurements recorded; LLM cannot mutate DB; safety eval executed |
+| Dependencies | PH00-TB-012; synthetic datasets; verified Ollama model tag/endpoint |
+| Deliverables | Ollama adapter POC; measurement evidence (no fabrication); limitation report if gaps |
+| Acceptance criteria | Real measurements; no paid AI APIs; LLM cannot mutate DB; safety eval executed; zero-cost alts considered before any paid proposal |
 | Responsible role | Engineering (AI Systems) |
 | Required reviewer | Tech Lead |
 | Status | `NOT_STARTED` |

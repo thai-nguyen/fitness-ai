@@ -3,45 +3,57 @@
 | Field | Value |
 | --- | --- |
 | Last updated | 2026-11-25 |
-| Milestone | PH00-M01 official acceptance recorded |
+| Milestone | PH00-M02 accepted; PH00-M03 authorized |
 
 ## Status values
 
-`PROPOSED` · `ACCEPTED` · `ACCEPTED_WITH_CONSTRAINTS` · `REJECTED` · `SUPERSEDED` · `DEFERRED` · `PENDING`
+`PROPOSED` · `ACCEPTED` · `ACCEPTED_WITH_CONSTRAINTS` · `REJECTED` · `SUPERSEDED` · `DEFERRED` · `PENDING` · `ALIGNED`
 
 ## Decisions
 
 | ID | Title | Status | ADR | Date | Notes |
 | --- | --- | --- | --- | --- | --- |
-| D-001 | Retain GitHub hosting; use GitHub Actions + PR workflow instead of GitLab CI | `ACCEPTED` | [ADR-0001](../adr/0001-github-hosting-and-github-actions.md) | 2026-11-25 | PO + Tech Lead. CI files deferred to M03. |
-| D-002 | Flutter / FastAPI Modular Monolith / PostgreSQL / Hybrid AI stack | `ALIGNED` (planning direction) | M02 ADRs pending | 2026-11-25 | Confirmed against AUTH-003; detailed ADRs still M02 |
-| D-003 | PostgreSQL-backed background jobs subject to M07 validation | `PROPOSED` | — | 2026-11-25 | Redis/Celery fallback only via ADR; **not** accepted by baseline approval |
-| D-004 | Retain existing `docs/phase-00` documentation layout | `ACCEPTED` | — | 2026-11-25 | Matches AUTH-003 guidance |
-| D-005 | `AGENTS.md` repo-specific governance with constraints | `ACCEPTED_WITH_CONSTRAINTS` | — | 2026-11-25 | No override of system/security/tool permissions; no global Cursor edits |
-| D-006 | Consolidated Baseline (AUTH-001..004) as official replacement for unavailable historical originals | `ACCEPTED` | — | 2026-11-25 | PO explicit approval; pending assumptions remain pending |
-| D-007 | PH00-M01 milestone acceptance | `ACCEPTED` | — | 2026-11-25 | Tech Lead; basis = final readiness report; M02 authorization remains PENDING |
+| D-001 | Retain GitHub hosting; use GitHub Actions + PR workflow instead of GitLab CI | `ACCEPTED` | [ADR-0001](../adr/0001-github-hosting-and-github-actions.md) | 2026-11-25 | Stay within free Actions limits |
+| D-002 | Flutter / FastAPI Modular Monolith / PostgreSQL / Hybrid AI stack | `ACCEPTED` | ADR-0002..0005 foundation; 0006–0010/0012 direction | 2026-11-25 | PO confirmed TL ADR decisions |
+| D-003 | PostgreSQL-backed background jobs subject to M07 validation | `PROPOSED` | ADR-0014 | 2026-11-25 | Redis/Celery deferred |
+| D-004 | Retain existing `docs/phase-00` documentation layout | `ACCEPTED` | — | 2026-11-25 | |
+| D-005 | `AGENTS.md` repo-specific governance with constraints | `ACCEPTED_WITH_CONSTRAINTS` | — | 2026-11-25 | |
+| D-006 | Consolidated Baseline as official replacement | `ACCEPTED` | — | 2026-11-25 | Pending assumptions remain pending |
+| D-007 | PH00-M01 milestone acceptance | `ACCEPTED` | — | 2026-11-25 | Commit `dc5f9d2` |
+| D-008 | Proceed to PH00-M02 after M01 local checkpoint | `ACCEPTED` | — | 2026-11-25 | |
+| D-009 | Architecture ADRs 0002–0016 content for review | `SUPERSEDED` | — | 2026-11-25 | Superseded by D-012 |
+| D-010 | **Zero-Cost First** development constraint | `ACCEPTED` | [ADR-0017](../adr/0017-zero-cost-local-ai-ollama.md) | 2026-11-25 | PO directive; CR-20261125 |
+| D-011 | **Ollama** as primary Phase 0 / development AI provider; Qwen 3.5 9B initial POC model | `ACCEPTED` (dev provider) | ADR-0017 | 2026-11-25 | Suitability PENDING M05 |
+| D-012 | PH00-M02 acceptance + ADR approval scope | `ACCEPTED` | ADR-0002..0017 per register | 2026-11-25 | TL accept; PO ADR confirmation |
+| D-013 | Proceed to PH00-M03 after M02 local checkpoint | `ACCEPTED` | — | 2026-11-25 | M03 commit NOT AUTHORIZED; push NO-GO |
 
-## D-006 approval evidence
+## D-012 ADR approval scope
 
-PO statement (2026-11-25):
+| Class | ADRs | Meaning |
+| --- | --- | --- |
+| Foundation accepted | 0001, 0002, 0003, 0004, 0005, 0017 | Bind M03 bootstrap |
+| Direction accepted | 0006, 0007, 0008, 0009, 0010, 0012 | Principle accepted; impl PENDING |
+| Remain proposed | 0011, 0013, 0014, 0015, 0016 | POC/business validation required |
 
-> Tôi phê duyệt bộ 4 tài liệu Consolidated Baseline làm baseline thay thế chính thức cho dự án fitness-ai. Cho phép thực hiện PH00-M01 final closure validation. Giữ nguyên trạng thái pending của các giả định chưa được xác nhận.
+## D-010 / D-011 approval evidence
 
-Recorded in [`authoritative/BASELINE_INDEX.md`](authoritative/BASELINE_INDEX.md).
+Project Owner directive (2026-11-25): Zero-Cost First & Local AI First; existing Ollama server (Qwen 3.5 9B; reported base URL for ops config only). See [CR-20261125](../change-requests/CR-20261125-zero-cost-local-ai.md).
 
-## Explicitly still pending / not accepted by D-006
+## Explicitly still pending
 
-- Team composition / staffing / 7 FTE / budget / 16-week commitment
+- Team / budget / timeline ROM commitments
 - Fitness/nutrition numerical thresholds (expert)
 - Exercise content licensing
-- AI provider selection / data governance completion
-- Managed authentication provider selection
-- PostgreSQL durable queue feasibility (POC)
-- Nutrition Lite inclusion beyond conditional spike
-- Target market / regulatory / jurisdiction assumptions
-- POC results, cost/latency benchmarks, SLOs as commitments
-- Proposed ADRs other than ADR-0001
+- **Qwen/Ollama capability & production readiness** (M05)
+- Managed/self-hosted **auth** vendor selection (prefer zero-cost)
+- Analytics / object storage production choices (prefer zero-cost)
+- PostgreSQL durable queue feasibility (M07)
+- Nutrition Lite inclusion
+- Target market / regulatory assumptions
+- **Production hosting** (paid cloud needs PO approval)
+- Paid cloud AI (not approved)
 
 ## Notes
 
-- Accepted decisions do not authorize M02+ or CI implementation before authorized milestones.
+- Accepted zero-cost constraint binds all milestones until PO changes it.
+- M02 local commit authorized after validation; push remains NO-GO.

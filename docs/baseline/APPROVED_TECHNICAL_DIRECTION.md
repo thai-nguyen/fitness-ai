@@ -39,7 +39,7 @@
 | Domain | Deterministic Fitness Domain Engine | Aligned |
 | Generation | Template-first + LLM personalization + validation | Aligned |
 | Memory | Structured persistent memory (PostgreSQL first) | Aligned; semantic retrieval deferred |
-| Providers | LLM provider abstraction | Aligned; vendor selection / governance **pending** |
+| Providers | LLM provider abstraction + **Ollama adapter (Phase 0)** | **ADR-0017**: Ollama primary for dev/POCs; Qwen 3.5 9B initial model (suitability **PENDING** M05). Paid cloud AI **not** approved. AUTH-003 OpenAI-candidate wording superseded for Phase 0 by CR-20261125 (baseline file preserved). |
 | Safety | Guardrails, tool authorization, evaluation | Aligned; numerical thresholds **pending expert** |
 
 Hard constraints: no LLM direct DB mutations; user confirmation for plan activation / material adjustments; memory cannot override authoritative domain records.
@@ -50,21 +50,24 @@ Hard constraints: no LLM direct DB mutations; user confirmation for plan activat
 | --- | --- | --- |
 | Hosting VCS | **GitHub** | **ACCEPTED** (ADR-0001 / D-001) |
 | CI | **GitHub Actions** + PR workflow | **ACCEPTED**; workflow files in **M03 only** |
-| Containers | Docker / managed containers | Aligned planning |
-| Object storage | S3-compatible when required | Aligned |
-| Push | FCM / APNs when notifications implemented | Aligned |
-| Observability | Basic (Sentry / OpenTelemetry candidates) | Aligned planning |
-| Admin | Minimal web admin (Next.js candidate) | **PROPOSED** when needed |
+| Containers | Docker Engine (local) | Zero-cost preference |
+| Object storage | Local FS / self-hosted MinIO preferred; billable S3 needs PO approval | ADR-0017 |
+| Push | FCM / APNs when required — check free-tier limits | Aligned planning |
+| Observability | Prefer OSS / self-hosted | Zero-cost preference |
+| Admin | Minimal web admin (OSS stack) | **PROPOSED** when needed |
+| Cost governance | Zero-Cost First | **ADR-0017 / D-010 ACCEPTED** |
 
-## Explicitly deferred (approval required)
+## Explicitly deferred / forbidden without approval
 
-Microservices, Kubernetes, Redis, Celery, Kafka, multi-agent architecture, dedicated vector database, custom RAG, advanced event streaming / generic event platform, Terraform unless justified, complex generic rule engines.
+Microservices, Kubernetes, Redis, Celery, Kafka, multi-agent architecture, dedicated vector database, custom RAG, advanced event streaming / generic event platform, Terraform unless justified, complex generic rule engines, **paid cloud AI APIs**, **paid cloud infra/SaaS** (unless PO explicitly approves).
 
 ## Alignment notes post-AUTH deposit
 
 | Item | Status |
 | --- | --- |
 | Prior GitLab CI wording | **Superseded** by ADR-0001 |
+| AUTH-003 OpenAI adapter candidate | **Superseded for Phase 0 execution** by ADR-0017 / CR-20261125 (historical text preserved) |
 | Monorepo layout names | Design in M02; bootstrap M03 (AUTH-003 target layout) |
 | Timeline/budget/FTE ROM in AUTH-003 | **PENDING** — not commitments |
+| Ollama/Qwen suitability | **PENDING** M05 evidence |
 | POC acceptance criteria in AUTH-003 | Require real evidence in M05–M07 |

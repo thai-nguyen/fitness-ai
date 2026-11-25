@@ -14,8 +14,8 @@ Reduce technical and product risk before production feature development through 
 | ID | Title | Status |
 | --- | --- | --- |
 | PH00-M01 | Repository Assessment & Project Baseline | **`ACCEPTED`** (Tech Lead 2026-11-25) |
-| PH00-M02 | Architecture & Domain Modelling | `NOT_STARTED`; authorization **PENDING** |
-| PH00-M03 | Engineering Foundation | `NOT_STARTED` |
+| PH00-M02 | Architecture & Domain Modelling | **`ACCEPTED`** (Tech Lead 2026-11-25) |
+| PH00-M03 | Engineering Foundation | `IN_PROGRESS` (GO after M02 checkpoint) |
 | PH00-M04 | Fitness Engine & Content Feasibility | `NOT_STARTED` |
 | PH00-M05 | AI Technical POCs | `NOT_STARTED` |
 | PH00-M06 | Offline Workout POC | `NOT_STARTED` |

@@ -17,16 +17,19 @@ Long-term vision references market quality bars (coaching depth, simplicity, eng
 | Field | Value |
 | --- | --- |
 | Phase | **PHASE-00** — Project Initialization & Technical Discovery |
-| PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25; basis = final readiness report) |
-| Current authorized milestone for new work | **None** — awaiting explicit PH00-M02 GO |
-| PH00-M02 authorization | **PENDING** (do not start) |
-| PH00-M03+ | **NO-GO** until respective authorization |
+| PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25); local commit `dc5f9d2` |
+| PH00-M02 | **`ACCEPTED`** (Tech Lead 2026-11-25); PO ADR approval confirmed; local commit authorized |
+| Current authorized milestone | **PH00-M03** — Engineering Foundation (Walking Skeleton) |
+| PH00-M02 local commit | **GO** (after validation); push **NO-GO** |
+| PH00-M03 commit | **NOT AUTHORIZED** |
+| PH00-M04+ | **NO-GO** until respective authorization |
 | Production feature development | **NO-GO** |
 | Unapproved infrastructure commitments | **NO-GO** |
+| Paid services / paid AI APIs | **NOT AUTHORIZED** |
 
-Authorized now: maintain accepted M01 documentation; prepare for M02 only after explicit Tech Lead GO.
+Authorized now: PH00-M03 foundation bootstrap (Flutter → FastAPI → PostgreSQL), local Compose, CI workflow definitions, docs/tests within Zero-Cost First / Local AI First.
 
-Not authorized now: PH00-M02 architecture/domain modelling, Flutter/FastAPI bootstrap, PostgreSQL/Docker/CI workflows, production features.
+Not authorized now: M03 git commit/push, M04+, production features, paid cloud/AI, AI chat/benchmarks (M05), domain product features.
 
 ## 3. Repository documentation index
 
@@ -81,7 +84,8 @@ Unresolved instruction conflicts must be **reported**, not silently forced.
 | Mobile | Flutter, Pragmatic Clean Architecture, BLoC/Cubit, GoRouter, GetIt, Dio, Drift/SQLite |
 | Backend | Python, FastAPI, Modular Monolith, PostgreSQL, SQLAlchemy, Alembic, Pydantic |
 | AI | Hybrid AI; deterministic Fitness Domain Engine; template-first generation; LLM provider abstraction; structured outputs; structured memory; tool authorization; safety guardrails; evaluation |
-| Infra | Docker; **GitHub Actions (ADR-0001 `ACCEPTED`)** — supersedes prior GitLab CI proposal; S3/FCM/APNs when required; basic observability; PostgreSQL-backed jobs subject to POC |
+| Infra | Docker Engine; **GitHub Actions (ADR-0001)** within free limits / self-hosted runners if needed; prefer local FS or self-hosted object storage; OSS monitoring; PostgreSQL-backed jobs subject to POC |
+| AI (Phase 0) | **Zero-Cost First / Local AI First (ADR-0017 `ACCEPTED`)**: **Ollama** primary; initial POC model **Qwen 3.5 9B** (tag unverified); hybrid orchestrator preserved; **no paid AI APIs** without PO approval; mobile → FastAPI only (never direct to Ollama) |
 
 Detail: [`docs/baseline/APPROVED_TECHNICAL_DIRECTION.md`](docs/baseline/APPROVED_TECHNICAL_DIRECTION.md).
 
@@ -90,10 +94,11 @@ Detail: [`docs/baseline/APPROVED_TECHNICAL_DIRECTION.md`](docs/baseline/APPROVED
 ### Accepted (do not re-litigate without CR)
 
 - **ADR-0001 / D-001 `ACCEPTED`**: GitHub hosting; GitHub Actions; Pull Request workflow. CI workflow files still deferred to **PH00-M03**.
+- **ADR-0017 / D-010 / D-011 `ACCEPTED`**: Zero-Cost First; Local AI First; Ollama as Phase 0 development AI provider; Qwen 3.5 9B initial POC model (suitability pending M05).
 
-### Deferred without explicit approval
+### Deferred / forbidden without PO approval
 
-Microservices, Kubernetes, Redis, Celery, Kafka, multi-agent architecture, dedicated vector database, custom RAG infrastructure, advanced event streaming, complex generic rule engines.
+Microservices, Kubernetes, Redis, Celery, Kafka, multi-agent architecture, dedicated vector database, custom RAG, advanced event streaming, complex generic rule engines, **paid cloud AI APIs**, **paid cloud infra/SaaS** (unless PO explicitly approves).
 
 ## 7. Architecture constraints
 
@@ -205,5 +210,9 @@ Agents must **not**, without explicit authorization:
 - Introduce deferred technologies
 - Silently alter approved Consolidated Baseline meaning
 - Convert pending baseline assumptions into accepted commitments without separate approval
+- Introduce paid APIs/cloud/SaaS without explicit Project Owner approval
+- Hardcode Ollama LAN addresses or call Ollama from mobile clients
+- Implement OpenAI/Anthropic/Gemini (or other paid AI) adapters without PO approval
 - Mark milestones `ACCEPTED` without Tech Lead reviewer approval
-- Commit, push, or merge
+- Commit, push, or merge without authorization
+- Fabricate AI benchmark results

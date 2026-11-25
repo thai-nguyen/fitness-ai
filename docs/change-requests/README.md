@@ -23,8 +23,14 @@ Use a Change Request when a material change is necessary relative to approved pr
 | --- | --- | --- | --- |
 | — | _(none yet)_ | — | — |
 
-## Candidates identified in PH00-M01
+## Index
+
+| CR | Title | Status |
+| --- | --- | --- |
+| [CR-20261125-zero-cost-local-ai](CR-20261125-zero-cost-local-ai.md) | Zero-Cost First & Local AI First (Ollama) | `ACCEPTED` (PO) |
+
+## Historical notes (PH00-M01)
 
 | Candidate | Topic | Outcome |
 | --- | --- | --- |
-| Hosting/CI | GitHub remote vs GitLab CI | **Resolved without CR** via ADR-0001 / D-001 `ACCEPTED` (PO + Tech Lead). Prior GitLab CI proposal superseded. |
+| Hosting/CI | GitHub remote vs GitLab CI | **Resolved** via ADR-0001 / D-001 `ACCEPTED`. |

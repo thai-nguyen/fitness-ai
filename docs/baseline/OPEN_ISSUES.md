@@ -14,7 +14,7 @@
 | ID | Title | Severity | Status | Related | Owner | Next action |
 | --- | --- | --- | --- | --- | --- | --- |
 | OI-003 | Domain expert unavailable for fitness rule sign-off | High | `OPEN` | M04 | Product Owner | Identify expert before M04 acceptance |
-| OI-004 | AI provider selection / data governance unknowns | High | `OPEN` | M05 / M08 | Tech Lead | Resolve during AI POC + privacy work |
+| OI-004 | Local model suitability / production AI readiness (Ollama/Qwen) + governance | High | `OPEN` | ADR-0017; M05 / M08 | Tech Lead | Run M05 matrix; production hosting still pending |
 | OI-005 | Exercise content licensing undecided | High | `OPEN` | M04 | PO / Legal | Licensing assessment |
 | OI-006 | External Cursor GitLab workflow rule vs GitHub PR workflow | Medium | `OPEN` | D-005 / ADR-0001 | Tech Lead / Engineering | Report-only under D-005 constraints |
 | OI-008 | Staffing / budget / timeline ROM not approved | Medium | `OPEN` | AUTH-003 §8 | PO / Sponsor | Keep pending; re-estimate after POCs |

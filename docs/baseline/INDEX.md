@@ -5,7 +5,8 @@
 | Last updated | 2026-11-25 |
 | Milestone | PH00-M01 **`ACCEPTED`** (Tech Lead 2026-11-25) |
 | Authoritative package | Consolidated Baseline **APPROVED** 2026-11-25 (PO) |
-| Next milestone | PH00-M02 — authorization **PENDING** |
+| Next milestone | PH00-M02 design complete; acceptance **PENDING** |
+| Subsequent approved change | Zero-Cost / Local AI First — [CR-20261125](../change-requests/CR-20261125-zero-cost-local-ai.md) / [ADR-0017](../adr/0017-zero-cost-local-ai-ollama.md) (AUTH files not silently rewritten) |
 
 ## 1. Authoritative vs derived documents
 
