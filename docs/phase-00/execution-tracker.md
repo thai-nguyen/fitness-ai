@@ -3,15 +3,16 @@
 | Field | Value |
 | --- | --- |
 | Phase | PHASE-00 |
-| Tracker version | 1.8 |
+| Tracker version | 2.0 |
 | Last updated | 2026-11-25 |
-| Updated by | Engineering (PH00-M02 ACCEPTED; M03 GO) |
-| Current authorized milestone | **PH00-M03** — Engineering Foundation |
-| PH00-M02 | **`ACCEPTED`** (Tech Lead 2026-11-25); PO ADR approval confirmed |
-| PH00-M03 authorization | **GO** after M02 local checkpoint |
+| Updated by | Engineering (PH00-M03 ACCEPTED WITH WAIVER; M04 GO) |
+| Current authorized milestone | **PH00-M04** — Fitness Engine Feasibility |
+| PH00-M02 | **`ACCEPTED`** |
+| PH00-M03 | **`ACCEPTED` WITH WAIVER** (PO D-020 / CR-20261125-B) |
 | M01 local commit | `dc5f9d2` |
-| M02 local commit | Authorized after validation (record SHA after commit) |
-| M03 commit | **NOT AUTHORIZED** |
+| M02 local commit | `6ecbbaf4b24c0704c458290076f1b67086bbde53` |
+| M03 local commit | Record SHA after authorized commit |
+| M04 commit | **NOT AUTHORIZED** |
 | Git push | **NO-GO** |
 | Overall phase status | `IN_PROGRESS` |
 
@@ -138,9 +139,15 @@
 
 | Field | Value |
 | --- | --- |
-| Status | `IN_PROGRESS` (authorized after M02 checkpoint) |
-| Authorization | Blocked until prior milestone acceptance |
-| Depends on | PH00-M02 (layout/module boundaries); hosting/CI decision |
+| Status | **`ACCEPTED` WITH WAIVER** |
+| Accepted by | Project Owner (D-020 / CR-20261125-B) |
+| Acceptance date | 2026-11-25 |
+| Completion report | [`PH00-M03-completion-report.md`](PH00-M03-completion-report.md) |
+| Remediation | [`PH00-M03-remediation-report.md`](PH00-M03-remediation-report.md) |
+| F-M03-001 Retry | **Not VERIFIED** — waived; future regression still required |
+| F-M03-002..005 | Accepted (004 license file still PENDING; 005 hosted CI NOT_EXECUTED) |
+| Commit | Local commit authorized after validation; push **NO-GO** |
+| Depends on | PH00-M02 (satisfied) |
 
 ### Planned outcomes
 
@@ -158,9 +165,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | `NOT_STARTED` |
-| Authorization | Blocked until prior milestone acceptance |
-| Depends on | Domain contracts from M02; domain expert availability |
+| Status | `IN_PROGRESS` |
+| Authorization | **GO** after M03 local checkpoint (D-021) |
+| Depends on | M03 `ACCEPTED`; domain contracts from M02 |
+| Commit | **NOT AUTHORIZED** |
 
 ### Planned outcomes
 
@@ -305,3 +313,4 @@ See also [`../baseline/OPEN_ISSUES.md`](../baseline/OPEN_ISSUES.md).
 | 2026-11-25 | Tech Lead officially **ACCEPTED** PH00-M01; F-M01-001..006 `ACCEPTED`; M02 authorization **PENDING**; tracker v1.6 |
 | 2026-11-25 | M02 design submitted; Tech Lead PASS WITH CONDITIONS; F-M02-001..006 remediated; ADR actual count **17**; M02 final accept PENDING; M03 NO-GO; no M02 commit; tracker v1.7 |
 | 2026-11-25 | PH00-M02 **ACCEPTED**; PO ADR approval; F-M02-001..006 `ACCEPTED`; foundation ADRs 0002–0005 accepted; direction 0006–0010/0012; M03 GO after checkpoint; tracker v1.8 |
+| 2026-11-25 | M02 local commit `6ecbbaf`; PH00-M03 Walking Skeleton implemented/validated; completion report submitted; M03 commit NOT AUTHORIZED; M04 NO-GO; tracker v1.9 |

@@ -1,0 +1,30 @@
+# Local development infrastructure for fitness-ai (PH00-M03).
+# Project-specific names/ports to avoid colliding with unrelated containers.
+# PostgreSQL is bound to loopback only.
+
+name: fitness-ai
+
+services:
+  postgres:
+    image: postgres:16.6-alpine
+    container_name: fitness-ai-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: fitness
+      POSTGRES_PASSWORD: fitness_dev_only
+      POSTGRES_DB: fitness_ai
+    ports:
+      - "127.0.0.1:15432:5432"
+    volumes:
+      - fitness_ai_pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fitness -d fitness_ai"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  fitness_ai_pg_data:
+    name: fitness_ai_pg_data

@@ -3,7 +3,7 @@
 | Field | Value |
 | --- | --- |
 | Last updated | 2026-11-25 |
-| Milestone | PH00-M02 accepted; PH00-M03 authorized |
+| Milestone | PH00-M03 ACCEPTED WITH WAIVER; PH00-M04 authorized |
 
 ## Status values
 
@@ -26,6 +26,14 @@
 | D-011 | **Ollama** as primary Phase 0 / development AI provider; Qwen 3.5 9B initial POC model | `ACCEPTED` (dev provider) | ADR-0017 | 2026-11-25 | Suitability PENDING M05 |
 | D-012 | PH00-M02 acceptance + ADR approval scope | `ACCEPTED` | ADR-0002..0017 per register | 2026-11-25 | TL accept; PO ADR confirmation |
 | D-013 | Proceed to PH00-M03 after M02 local checkpoint | `ACCEPTED` | — | 2026-11-25 | M03 commit NOT AUTHORIZED; push NO-GO |
+| D-014 | Python deps via `pyproject.toml` + venv + `requirements.lock.txt` | `ACCEPTED` | — | 2026-11-25 | M03 implementation |
+| D-015 | Sync SQLAlchemy 2.x for M03 health/DB access | `ACCEPTED` | — | 2026-11-25 | Async deferred |
+| D-016 | Postgres host port `127.0.0.1:15432` (avoid Windows excluded ranges) | `ACCEPTED` | — | 2026-11-25 | Image `postgres:16.6-alpine` |
+| D-017 | Backend listen port `8080` (avoid occupied `8000`) | `ACCEPTED` | — | 2026-11-25 | |
+| D-018 | Provisional Android id `com.fitnessai.dev.fitness_ai_mobile` | `ACCEPTED` | — | 2026-11-25 | Dev only |
+| D-019 | Mobile API base URL via `--dart-define=API_BASE_URL` | `ACCEPTED` | — | 2026-11-25 | |
+| D-020 | PH00-M03 ACCEPTED WITH WAIVER (F-M03-001 Retry interactive) | `ACCEPTED` | [CR-20261125-B](../change-requests/CR-20261125-m03-retry-waiver.md) | 2026-11-25 | Retry not PASS/VERIFIED; regression still required |
+| D-021 | Proceed to PH00-M04 after M03 local checkpoint | `ACCEPTED` | — | 2026-11-25 | M04 commit NOT AUTHORIZED; push NO-GO |
 
 ## D-012 ADR approval scope
 

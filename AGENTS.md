@@ -18,11 +18,12 @@ Long-term vision references market quality bars (coaching depth, simplicity, eng
 | --- | --- |
 | Phase | **PHASE-00** — Project Initialization & Technical Discovery |
 | PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25); local commit `dc5f9d2` |
-| PH00-M02 | **`ACCEPTED`** (Tech Lead 2026-11-25); PO ADR approval confirmed; local commit authorized |
-| Current authorized milestone | **PH00-M03** — Engineering Foundation (Walking Skeleton) |
-| PH00-M02 local commit | **GO** (after validation); push **NO-GO** |
-| PH00-M03 commit | **NOT AUTHORIZED** |
-| PH00-M04+ | **NO-GO** until respective authorization |
+| PH00-M02 | **`ACCEPTED`**; local commit `6ecbbaf` |
+| PH00-M03 | **`ACCEPTED` WITH WAIVER** (PO D-020 / CR-20261125-B); F-M03-001 Retry not VERIFIED |
+| Current authorized milestone | **PH00-M04** — Fitness Engine Feasibility |
+| PH00-M03 local commit | **AUTHORIZED** (after validation); push **NO-GO** |
+| PH00-M04 commit | **NOT AUTHORIZED** |
+| PH00-M05+ | **NO-GO** until respective authorization |
 | Production feature development | **NO-GO** |
 | Unapproved infrastructure commitments | **NO-GO** |
 | Paid services / paid AI APIs | **NOT AUTHORIZED** |

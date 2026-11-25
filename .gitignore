@@ -24,6 +24,9 @@ Thumbs.db
 .tmp/
 .temp/
 .buildlog/
+scripts/*.out.log
+scripts/*.err.log
+scripts/runtime-evidence/*.log
 
 # --- Python / FastAPI ---
 __pycache__/

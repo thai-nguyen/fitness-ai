@@ -166,7 +166,16 @@
 | Acceptance criteria | Apps boot; migrations apply; CI green on PR; no deferred infra introduced |
 | Responsible role | Engineering |
 | Required reviewer | Tech Lead |
-| Status | `NOT_STARTED` |
+| Status | `VALIDATED` (engineering evidence in PH00-M03 completion report; Tech Lead acceptance PENDING) |
+
+### PH00-TB-010-A (subtask)
+
+| Field | Value |
+| --- | --- |
+| Task ID | PH00-TB-010-A |
+| Parent | PH00-TB-010 |
+| Description | Optional read-only Ollama `/api/tags` connectivity check (no generation) |
+| Status | `VALIDATED` (LAN reachable; exact tag `qwen3.5:9b` present) |
 
 ### PH00-TB-011
 
@@ -181,7 +190,7 @@
 | Acceptance criteria | License approved by owner; local DB access documented |
 | Responsible role | Engineering (+ Legal for LICENSE) |
 | Required reviewer | Tech Lead |
-| Status | `NOT_STARTED` |
+| Status | `IN_PROGRESS` — DB access documented in runbook; **LICENSE blocked on PO decision** (see `docs/baseline/LICENSING_STATUS.md`). Do not mark complete until LICENSE criterion is met. |
 
 ### PH00-TB-012
 

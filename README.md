@@ -8,51 +8,67 @@ Combines personalized training, conversational AI coaching, persistent user memo
 
 **PHASE-00 — Project Initialization & Technical Discovery**
 
-- **PH00-M01:** `ACCEPTED` (Tech Lead 2026-11-25)
-- **PH00-M02:** authorization **PENDING** (do not start without explicit GO)
-- Authorized generally for Phase 0 when milestones are GO: discovery, architecture documentation, technical POCs, reversible engineering foundation
-- Not authorized: full production feature development, unapproved infrastructure, unauthorized milestones
+| Milestone | Status |
+| --- | --- |
+| PH00-M01 | `ACCEPTED` — commit `dc5f9d2` |
+| PH00-M02 | `ACCEPTED` — commit `6ecbbaf` |
+| PH00-M03 | Walking Skeleton `IMPLEMENTED` — acceptance **PENDING**; **no M03 commit** |
+| PH00-M04+ | **NO-GO** |
 
-## Approved stack (TIP v1.1)
+Constraints: **Zero-Cost First**, **Local AI First** (Ollama / Qwen 3.5 9B). Git **push NO-GO**. Paid services **NOT AUTHORIZED**.
+
+## Walking Skeleton (M03)
+
+`Flutter → FastAPI → PostgreSQL` health check path.
+
+Quick start: [`docs/phase-00/LOCAL_DEV_RUNBOOK.md`](docs/phase-00/LOCAL_DEV_RUNBOOK.md)
+
+```powershell
+docker compose -f infrastructure/docker-compose.yml up -d
+cd services\backend
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -e ".[dev]"
+$env:DATABASE_URL="postgresql+psycopg://fitness:fitness_dev_only@127.0.0.1:15432/fitness_ai"
+alembic upgrade head
+uvicorn app.main:app --host 127.0.0.1 --port 8080
+# other terminal:
+cd apps\mobile
+flutter pub get
+flutter run -d windows --dart-define=API_BASE_URL=http://127.0.0.1:8080
+```
+
+Local quality: `.\scripts\local_quality.ps1`
+
+## Approved stack
 
 | Layer | Direction |
 | --- | --- |
-| Mobile | Flutter, Pragmatic Clean Architecture, BLoC/Cubit, GoRouter, GetIt, Dio, Drift/SQLite |
-| Backend | Python, FastAPI, Modular Monolith, PostgreSQL, SQLAlchemy, Alembic, Pydantic |
-| AI | Hybrid architecture, deterministic Fitness Domain Engine, template-first generation, LLM provider abstraction |
-| Infra | Docker, **GitHub Actions** (ADR-0001 `ACCEPTED`; implement in M03), basic observability; S3/FCM/APNs when required |
+| Mobile | Flutter, Clean Architecture, BLoC/Cubit, GoRouter, GetIt, Dio |
+| Backend | Python, FastAPI modular monolith, PostgreSQL, SQLAlchemy (sync M03), Alembic, Pydantic |
+| AI | Hybrid direction; Ollama config boundary only in M03 (no chat) |
+| Infra | Docker Compose (Postgres), GitHub Actions workflow definitions |
 
-## Repository status
+## Repository layout
 
-Greenfield baseline established under **PH00-M01**. Application code and walking skeleton are deferred to **PH00-M03**.
+```text
+apps/mobile/           Flutter Walking Skeleton
+services/backend/      FastAPI foundation
+infrastructure/        docker-compose.yml
+scripts/               local_quality.ps1
+docs/                  baseline, architecture, phase-00
+.github/workflows/     quality.yml (hosted run pending push)
+```
 
 ## Documentation
 
-Start at [`AGENTS.md`](AGENTS.md) (governance) and [`docs/README.md`](docs/README.md).
-
 | Area | Path |
 | --- | --- |
-| Agent / engineering governance | [`AGENTS.md`](AGENTS.md) |
-| Baseline index / SoT | [`docs/baseline/INDEX.md`](docs/baseline/INDEX.md) |
-| Authoritative deposits | [`docs/baseline/authoritative/`](docs/baseline/authoritative/) (**APPROVED** Consolidated Baseline 2026-11-25) |
-| Project baseline | [`docs/baseline/`](docs/baseline/) |
-| Phase 0 tracker | [`docs/phase-00/execution-tracker.md`](docs/phase-00/execution-tracker.md) |
-| Architecture (M02+) | [`docs/architecture/`](docs/architecture/) |
-| ADRs | [`docs/adr/`](docs/adr/) |
-| Risks | [`docs/risks/RISK_REGISTER.md`](docs/risks/RISK_REGISTER.md) |
-| Backlog | [`docs/backlog/TECHNICAL_BACKLOG.md`](docs/backlog/TECHNICAL_BACKLOG.md) |
-| Change requests | [`docs/change-requests/`](docs/change-requests/) |
-
-## Local tooling observed (developer workstation)
-
-Captured during PH00-M01 assessment (not a project commitment):
-
-- Python 3.12.10
-- Flutter 3.47.2 (stable) / Dart 3.13.2
-- Docker 29.9.2
-- `psql` CLI not on PATH
-- GitHub CLI (`gh`) not installed
+| Governance | [`AGENTS.md`](AGENTS.md) |
+| Docs index | [`docs/README.md`](docs/README.md) |
+| Local runbook | [`docs/phase-00/LOCAL_DEV_RUNBOOK.md`](docs/phase-00/LOCAL_DEV_RUNBOOK.md) |
+| M03 completion | [`docs/phase-00/PH00-M03-completion-report.md`](docs/phase-00/PH00-M03-completion-report.md) |
 
 ## Change control
 
-Do not change product scope, approved technology direction, or introduce deferred technologies without an approved Change Request. See [`docs/change-requests/README.md`](docs/change-requests/README.md).
+Do not change product scope or introduce deferred/paid technologies without an approved Change Request.
