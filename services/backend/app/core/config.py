@@ -31,6 +31,15 @@ class Settings(BaseSettings):
     ai_provider: str = Field(default="ollama", alias="AI_PROVIDER")
     ollama_base_url: str = Field(default="http://127.0.0.1:11434", alias="OLLAMA_BASE_URL")
     ollama_model: str = Field(default="qwen3.5:9b", alias="OLLAMA_MODEL")
+    ai_connect_timeout_seconds: float = Field(default=5.0, alias="AI_CONNECT_TIMEOUT_SECONDS")
+    ai_read_timeout_seconds: float = Field(default=120.0, alias="AI_READ_TIMEOUT_SECONDS")
+    ai_total_timeout_seconds: float = Field(default=180.0, alias="AI_TOTAL_TIMEOUT_SECONDS")
+    ai_max_output_tokens: int = Field(default=1024, alias="AI_MAX_OUTPUT_TOKENS")
+    ai_max_context_tokens: int = Field(default=4096, alias="AI_MAX_CONTEXT_TOKENS")
+    ai_max_repair_attempts: int = Field(default=1, alias="AI_MAX_REPAIR_ATTEMPTS")
+    ai_max_concurrent_requests: int = Field(default=1, alias="AI_MAX_CONCURRENT_REQUESTS")
+    ai_temperature: float = Field(default=0.2, alias="AI_TEMPERATURE")
+    ai_poc_enabled: bool = Field(default=False, alias="AI_POC_ENABLED")
 
     @field_validator("database_url")
     @classmethod

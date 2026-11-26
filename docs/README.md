@@ -49,7 +49,8 @@ A task may only be marked `ACCEPTED` after the appropriate reviewer has approved
 | PH00-M01 | **`ACCEPTED`**; commit `dc5f9d2` |
 | PH00-M02 | **`ACCEPTED`**; commit `6ecbbaf` |
 | PH00-M03 | **`ACCEPTED` WITH WAIVER** (D-020); commit `a99ad5e` |
-| PH00-M04 | `VALIDATED` engineering; TL acceptance PENDING; commit NOT AUTHORIZED |
+| PH00-M04 | **`ACCEPTED`**; commit `a7a870a` |
+| PH00-M05 | `VALIDATED` engineering; TL acceptance PENDING; commit NOT AUTHORIZED |
 
 Live detail: [`phase-00/execution-tracker.md`](phase-00/execution-tracker.md).
 

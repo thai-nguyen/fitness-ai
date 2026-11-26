@@ -1,0 +1,33 @@
+{
+  "mode": "live-eval",
+  "model": "qwen3.5:9b",
+  "scenario_count": 2,
+  "passed": 2,
+  "failed_scenario_ids": [],
+  "scenarios": [
+    {
+      "scenario_id": "M05-LIVE-01",
+      "outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "source": "LLM_PERSONALIZED",
+      "unknown_exercise_ids": 0,
+      "repair_attempted": false,
+      "provider_latency_ms": 4009.137400018517,
+      "wall_ms": 4492.021800018847,
+      "passed": true
+    },
+    {
+      "scenario_id": "M05-LIVE-02",
+      "outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "source": "LLM_PERSONALIZED",
+      "unknown_exercise_ids": 0,
+      "repair_attempted": false,
+      "provider_latency_ms": 4617.45439999504,
+      "wall_ms": 4618.295099993702,
+      "passed": true
+    }
+  ],
+  "unknown_exercise_id_violations": 0,
+  "invalid_drafts_incorrectly_accepted": 0,
+  "paid_external_ai_requests": 0,
+  "functional_pass": true
+}

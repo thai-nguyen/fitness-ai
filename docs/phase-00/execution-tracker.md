@@ -13,7 +13,7 @@
 | M01 local commit | `dc5f9d2` |
 | M02 local commit | `6ecbbaf4b24c0704c458290076f1b67086bbde53` |
 | M03 local commit | `a99ad5ef7aced1e4c4fa970d314fa3048dc84885` — feat: establish engineering foundation and close PH00-M03 |
-| M04 local commit | Pending this checkpoint — then M05 GO |
+| M04 local commit | `a7a870a00cb018a22edcbd2500311e9fc1155672` — feat: establish deterministic fitness engine and close PH00-M04 |
 | M05 commit | **NOT AUTHORIZED** |
 | Git push | **NO-GO** |
 | Overall phase status | `IN_PROGRESS` |
@@ -199,9 +199,10 @@
 
 | Field | Value |
 | --- | --- |
-| Status | `IN_PROGRESS` |
+| Status | `VALIDATED` (engineering; TL acceptance PENDING — do not self-accept) |
 | Authorization | **GO** after M04 local checkpoint (D-030); Ollama synthetic inference AUTHORIZED |
 | Depends on | M04 `ACCEPTED`; Fitness validation interfaces; synthetic datasets |
+| Completion report | [`PH00-M05-completion-report.md`](PH00-M05-completion-report.md) |
 | Commit | **NOT AUTHORIZED** |
 | Paid AI / push / M06+ | **NO-GO** |
 

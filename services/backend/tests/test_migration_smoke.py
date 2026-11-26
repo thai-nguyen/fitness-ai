@@ -41,4 +41,4 @@ def test_alembic_upgrade_head() -> None:
         check=False,
     )
     assert current.returncode == 0
-    assert "20261125_0001" in current.stdout
+    assert "20261126_0002" in current.stdout

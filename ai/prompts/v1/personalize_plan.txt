@@ -1,0 +1,5 @@
+PROMPT_ID=GEN-PERSONALIZE-001
+VERSION=1
+Select exercises only from the provided eligible candidates for each slot.
+Return JSON only with keys: template_id, exercise_choices (list of {slot_id, exercise_id}), personalization_reason.
+Do not invent IDs. Do not add extra fields. Do not include absolute weights.

@@ -35,7 +35,7 @@
 | R-019 | AI cost overrun | High | Medium | Medium | Usage monitor; budgets | TL | M05 metrics | Open |
 | R-020 | Provider availability | Medium | Medium | Medium | Fallback UX | Eng | M05 | Open |
 | R-021 | Architecture complexity creep | Medium | Medium | Medium | Minimal infra; ADR discipline | TL | M02 review | Mitigating |
-| R-022 | Local Ollama/Qwen capacity or capability insufficient | High | Medium | High | M05 measurements; app-controlled tool routing; zero-cost alts before paid | AI/TL | M05 | Open |
+| R-022 | Local Ollama/Qwen capacity or capability insufficient | Medium | Medium | Medium | M05 live hybrid OK (CONDITIONAL GO Phase 0); chat latency variance remains; production bar still unmet | AI/TL | M05 | Mitigating |
 | R-023 | Free-tier CI/push/notification limits; hosted Actions unrun; vuln scan pending | Medium | Medium | Medium | Document limits; OI-015 (F-M03-005 hosted NOT_EXECUTED); OI-017 vuln scan | Eng | M03+ | Open |
 | R-024 | LAN Ollama outage / misconfig blocks AI POCs | Medium | Medium | Medium | Env config; health checks; deterministic fallbacks | Eng | M05 | Open |
 | R-025 | Waived M03 Retry Recovery regresses unnoticed | Medium | Medium | Medium | OI-013 / F-M03-001; D-020 — not PASS; schedule regression | Eng | Post-M03 | Open |

@@ -17,7 +17,7 @@ Reduce technical and product risk before production feature development through 
 | PH00-M02 | Architecture & Domain Modelling | **`ACCEPTED`** (Tech Lead 2026-11-25) |
 | PH00-M03 | Engineering Foundation | **`ACCEPTED` WITH WAIVER** (PO 2026-11-25; D-020) |
 | PH00-M04 | Fitness Engine & Content Feasibility | **`ACCEPTED`** (technical feasibility) — [`PH00-M04-completion-report.md`](PH00-M04-completion-report.md) |
-| PH00-M05 | AI Technical POCs | `IN_PROGRESS` (GO after M04 checkpoint; Ollama synthetic authorized) |
+| PH00-M05 | AI Technical POCs | `VALIDATED` (engineering; TL acceptance PENDING) — [`PH00-M05-completion-report.md`](PH00-M05-completion-report.md) |
 | PH00-M05 | AI Technical POCs | `NOT_STARTED` |
 | PH00-M06 | Offline Workout POC | `NOT_STARTED` |
 | PH00-M07 | Background Job Reliability POC | `NOT_STARTED` |

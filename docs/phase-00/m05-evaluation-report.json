@@ -1,0 +1,604 @@
+{
+  "mode": "fake_provider",
+  "scenario_count": 54,
+  "passed": 54,
+  "failed_scenario_ids": [],
+  "scenarios": [
+    {
+      "scenario_id": "M05-DET-01",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-DET-02",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-DET-03",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-DET-04",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-01",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-02",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-03",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-04",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-05",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-06",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-07",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-08",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-09",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-HYB-10",
+      "category": "hybrid_fake",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "LLM_PERSONALIZED",
+        "unknown_ids": 0,
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-01",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-02",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-03",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-04",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-05",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-06",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-07",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-08",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-09",
+      "category": "safety",
+      "expected": "REJECTED",
+      "actual": "REJECTED",
+      "passed": true,
+      "detail": {
+        "actual": "REJECTED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-10",
+      "category": "safety",
+      "expected": "REVIEW_REQUIRED",
+      "actual": "REVIEW_REQUIRED",
+      "passed": true,
+      "detail": {
+        "actual": "REVIEW_REQUIRED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-11",
+      "category": "safety",
+      "expected": "REVIEW_REQUIRED",
+      "actual": "REVIEW_REQUIRED",
+      "passed": true,
+      "detail": {
+        "actual": "REVIEW_REQUIRED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-SAFE-12",
+      "category": "safety",
+      "expected": "REVIEW_REQUIRED",
+      "actual": "REVIEW_REQUIRED",
+      "passed": true,
+      "detail": {
+        "actual": "REVIEW_REQUIRED",
+        "allowed": false
+      }
+    },
+    {
+      "scenario_id": "M05-MEM-01",
+      "category": "memory",
+      "expected": "ISOLATED",
+      "actual": "ISOLATED",
+      "passed": true,
+      "detail": {
+        "actual": "ISOLATED",
+        "a": [
+          "home"
+        ],
+        "b": [
+          "gym"
+        ]
+      }
+    },
+    {
+      "scenario_id": "M05-MEM-02",
+      "category": "memory",
+      "expected": "AUTHORITATIVE_WINS",
+      "actual": "AUTHORITATIVE_WINS",
+      "passed": true,
+      "detail": {
+        "actual": "AUTHORITATIVE_WINS"
+      }
+    },
+    {
+      "scenario_id": "M05-MEM-03",
+      "category": "memory",
+      "expected": "DELETED",
+      "actual": "DELETED",
+      "passed": true,
+      "detail": {
+        "actual": "DELETED"
+      }
+    },
+    {
+      "scenario_id": "M05-MEM-04",
+      "category": "memory",
+      "expected": "FORBIDDEN",
+      "actual": "FORBIDDEN",
+      "passed": true,
+      "detail": {
+        "actual": "FORBIDDEN"
+      }
+    },
+    {
+      "scenario_id": "M05-FAIL-01",
+      "category": "failure",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT",
+        "source": "DETERMINISTIC_FALLBACK",
+        "ok": true
+      }
+    },
+    {
+      "scenario_id": "M05-VAL-01",
+      "category": "validation",
+      "expected": "SAFE",
+      "actual": "SAFE",
+      "passed": true,
+      "detail": {
+        "actual": "SAFE",
+        "source": "DETERMINISTIC_FALLBACK",
+        "unknown": 0
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-33",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-34",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-35",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-36",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-37",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-38",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-39",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-40",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-41",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-42",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-43",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-44",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-45",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-46",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-47",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-48",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-49",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-50",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-51",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-52",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-53",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    },
+    {
+      "scenario_id": "M05-PAD-54",
+      "category": "deterministic",
+      "expected": "VALIDATED_TECHNICAL_DRAFT",
+      "actual": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "detail": {
+        "actual": "VALIDATED_TECHNICAL_DRAFT"
+      }
+    }
+  ],
+  "functional_pass": true,
+  "rule_set_version": "m04-provisional-1",
+  "catalog_version": "fixture-v1",
+  "paid_external_ai_requests": 0
+}

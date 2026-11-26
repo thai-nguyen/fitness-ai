@@ -43,6 +43,11 @@
 | D-028 | Evaluation scenarios module + pytest gate (≥30) | `ACCEPTED` | — | 2026-11-26 | Synthetic only |
 | D-029 | PH00-M04 technical feasibility acceptance | `ACCEPTED` | — | 2026-11-26 | Provisional rules remain non-expert-approved; OI-003/005 preserved |
 | D-030 | Proceed to PH00-M05 after M04 local checkpoint; Ollama synthetic inference authorized | `ACCEPTED` | — | 2026-11-26 | M05 commit NOT AUTHORIZED; push NO-GO; paid AI NO-GO |
+| D-031 | Structured output via Ollama format=json + eligible candidate allowlist | `ACCEPTED` | — | 2026-11-26 | M05 technical decision |
+| D-032 | Max 1 structured repair then deterministic fallback | `ACCEPTED` | — | 2026-11-26 | Configurable via AI_MAX_REPAIR_ATTEMPTS |
+| D-033 | synthetic_ai_memory minimal PostgreSQL POC table | `ACCEPTED` | — | 2026-11-26 | Alembic 20261126_0002 |
+| D-034 | Disable/persist-no thinking traces for user/eval paths | `ACCEPTED` | — | 2026-11-26 | think=false |
+| D-035 | Live Ollama only via explicit evaluation modes | `ACCEPTED` | — | 2026-11-26 | Unit tests use FakeAIProvider |
 
 ## D-012 ADR approval scope
 

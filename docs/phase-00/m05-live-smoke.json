@@ -1,0 +1,33 @@
+{
+  "capabilities": {
+    "chat": true,
+    "structured_json": true,
+    "streaming": true,
+    "tools": true,
+    "thinking": true,
+    "model_tag": "qwen3.5:9b",
+    "model_digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90",
+    "quantization": "Q4_K_M",
+    "context_length": 262144,
+    "notes": [
+      "completion",
+      "vision",
+      "tools",
+      "thinking"
+    ]
+  },
+  "chat_latency_ms": 7501.318099966738,
+  "chat_usage": {
+    "prompt_tokens": 23,
+    "completion_tokens": 2,
+    "total_tokens": 25
+  },
+  "structured_text": "{\"status\":\"ok\",\"n\":1}",
+  "structured_latency_ms": 317.4894999829121,
+  "stream_ttft_ms": 125.48709998372942,
+  "wall_ms": 8085.73329995852,
+  "model": "qwen3.5:9b",
+  "base_url_is_loopback_default": false,
+  "live_smoke_pass": true,
+  "paid_external_ai_requests": 0
+}

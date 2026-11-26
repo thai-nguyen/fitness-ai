@@ -235,7 +235,7 @@
 | Acceptance criteria | Real measurements; no paid AI APIs; LLM cannot mutate DB; safety eval executed; zero-cost alts considered before any paid proposal |
 | Responsible role | Engineering (AI Systems) |
 | Required reviewer | Tech Lead |
-| Status | `IN_PROGRESS` |
+| Status | `VALIDATED` (engineering evidence in PH00-M05 completion report; Tech Lead acceptance PENDING) |
 
 ### PH00-TB-015
 
