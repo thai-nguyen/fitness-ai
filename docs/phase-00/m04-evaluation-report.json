@@ -1,0 +1,429 @@
+{
+  "catalog_version": "fixture-v1",
+  "rule_set_version": "m04-provisional-1",
+  "scenario_count": 32,
+  "positive": {
+    "total": 10,
+    "passed": 10
+  },
+  "negative": {
+    "total": 15,
+    "passed": 15
+  },
+  "boundary": {
+    "total": 7,
+    "passed": 7
+  },
+  "failed_scenario_ids": [],
+  "scenarios": [
+    {
+      "scenario_id": "S-POS-001",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.3085000207647681
+    },
+    {
+      "scenario_id": "S-POS-002",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.26790000265464187
+    },
+    {
+      "scenario_id": "S-POS-003",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.19019999308511615
+    },
+    {
+      "scenario_id": "S-POS-004",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.22350001381710172
+    },
+    {
+      "scenario_id": "S-POS-005",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.1621000119484961
+    },
+    {
+      "scenario_id": "S-POS-006",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.13539998326450586
+    },
+    {
+      "scenario_id": "S-POS-007",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.13240001862868667
+    },
+    {
+      "scenario_id": "S-POS-008",
+      "category": "positive",
+      "expected_outcomes": [
+        "INFEASIBLE_CONSTRAINTS",
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.12959999730810523
+    },
+    {
+      "scenario_id": "S-POS-009",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.1351999817416072
+    },
+    {
+      "scenario_id": "S-POS-010",
+      "category": "positive",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.1267999759875238
+    },
+    {
+      "scenario_id": "S-NEG-001",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-ASSESS-001"
+      ],
+      "latency_ms": 0.01290004001930356
+    },
+    {
+      "scenario_id": "S-NEG-002",
+      "category": "negative",
+      "expected_outcomes": [
+        "UNSUPPORTED_PROFILE"
+      ],
+      "actual_outcome": "UNSUPPORTED_PROFILE",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SCOPE-001"
+      ],
+      "latency_ms": 0.013999990187585354
+    },
+    {
+      "scenario_id": "S-NEG-003",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SCHED-001"
+      ],
+      "latency_ms": 0.005499983672052622
+    },
+    {
+      "scenario_id": "S-NEG-004",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-DUR-001"
+      ],
+      "latency_ms": 0.007700000423938036
+    },
+    {
+      "scenario_id": "S-NEG-005",
+      "category": "negative",
+      "expected_outcomes": [
+        "UNSUPPORTED_PROFILE"
+      ],
+      "actual_outcome": "UNSUPPORTED_PROFILE",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SCOPE-002"
+      ],
+      "latency_ms": 0.00589998671784997
+    },
+    {
+      "scenario_id": "S-NEG-006",
+      "category": "negative",
+      "expected_outcomes": [
+        "REVIEW_REQUIRED"
+      ],
+      "actual_outcome": "REVIEW_REQUIRED",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SAFE-002"
+      ],
+      "latency_ms": 0.007299997378140688
+    },
+    {
+      "scenario_id": "S-NEG-007",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-ASSESS-003"
+      ],
+      "latency_ms": 0.004700035788118839
+    },
+    {
+      "scenario_id": "S-NEG-008",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SCHED-002"
+      ],
+      "latency_ms": 0.004700035788118839
+    },
+    {
+      "scenario_id": "S-NEG-009",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SCHED-004"
+      ],
+      "latency_ms": 0.006199989002197981
+    },
+    {
+      "scenario_id": "S-NEG-010",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SAFE-001"
+      ],
+      "latency_ms": 0.005399982910603285
+    },
+    {
+      "scenario_id": "S-NEG-011",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-ASSESS-001"
+      ],
+      "latency_ms": 0.004699977580457926
+    },
+    {
+      "scenario_id": "S-NEG-012",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT",
+        "UNSUPPORTED_PROFILE"
+      ],
+      "actual_outcome": "UNSUPPORTED_PROFILE",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SCHED-003"
+      ],
+      "latency_ms": 0.006599992047995329
+    },
+    {
+      "scenario_id": "S-NEG-013",
+      "category": "negative",
+      "expected_outcomes": [
+        "INFEASIBLE_CONSTRAINTS",
+        "INSUFFICIENT_CATALOG"
+      ],
+      "actual_outcome": "INSUFFICIENT_CATALOG",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SEL-001"
+      ],
+      "latency_ms": 0.06269995355978608
+    },
+    {
+      "scenario_id": "S-NEG-014",
+      "category": "negative",
+      "expected_outcomes": [
+        "INFEASIBLE_CONSTRAINTS",
+        "INSUFFICIENT_CATALOG",
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "INSUFFICIENT_CATALOG",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SEL-001"
+      ],
+      "latency_ms": 0.052799994591623545
+    },
+    {
+      "scenario_id": "S-BND-001",
+      "category": "boundary",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.14570000348612666
+    },
+    {
+      "scenario_id": "S-BND-002",
+      "category": "boundary",
+      "expected_outcomes": [
+        "INFEASIBLE_CONSTRAINTS",
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.13530004071071744
+    },
+    {
+      "scenario_id": "S-BND-003",
+      "category": "boundary",
+      "expected_outcomes": [
+        "INFEASIBLE_CONSTRAINTS",
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.19729998894035816
+    },
+    {
+      "scenario_id": "S-BND-004",
+      "category": "boundary",
+      "expected_outcomes": [
+        "INFEASIBLE_CONSTRAINTS",
+        "INSUFFICIENT_CATALOG",
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.12969999806955457
+    },
+    {
+      "scenario_id": "S-BND-005",
+      "category": "boundary",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.2587999915704131
+    },
+    {
+      "scenario_id": "S-BND-006",
+      "category": "boundary",
+      "expected_outcomes": [
+        "INFEASIBLE_CONSTRAINTS",
+        "INSUFFICIENT_CATALOG",
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "INSUFFICIENT_CATALOG",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-SEL-001"
+      ],
+      "latency_ms": 0.057100027333945036
+    },
+    {
+      "scenario_id": "S-BND-007",
+      "category": "boundary",
+      "expected_outcomes": [
+        "VALIDATED_TECHNICAL_DRAFT"
+      ],
+      "actual_outcome": "VALIDATED_TECHNICAL_DRAFT",
+      "passed": true,
+      "rule_ids_seen": [],
+      "latency_ms": 0.13100000796839595
+    },
+    {
+      "scenario_id": "S-NEG-015",
+      "category": "negative",
+      "expected_outcomes": [
+        "INVALID_INPUT"
+      ],
+      "actual_outcome": "INVALID_INPUT",
+      "passed": true,
+      "rule_ids_seen": [
+        "BR-ASSESS-001"
+      ],
+      "latency_ms": 0.010400020983070135
+    }
+  ],
+  "hard_constraint_violations_in_validated_drafts": 0,
+  "unknown_exercise_id_violations": 0,
+  "invalid_drafts_incorrectly_accepted": 0,
+  "expected_critical_safety_blocks_missed": 0,
+  "determinism_pass": true,
+  "latency": {
+    "methodology": "per-scenario wall time via time.perf_counter around generate_training_plan; not a pass/fail gate",
+    "sample_count": 32,
+    "median_ms": 0.0947,
+    "p95_ms": 0.2588,
+    "max_ms": 0.3085,
+    "total_wall_ms": 3.583
+  },
+  "functional_pass": true
+}

@@ -10,6 +10,7 @@ docs/
 ├── baseline/                 # Project baseline and approved direction
 ├── phase-00/                 # Phase 0 milestones, tracker, evidence
 ├── architecture/             # System architecture (PH00-M02+)
+├── business-rules/           # Fitness rule catalogs (PH00-M04+)
 ├── adr/                      # Architecture Decision Records
 ├── change-requests/          # Formal change control
 ├── risks/                    # Risk register
@@ -45,8 +46,10 @@ A task may only be marked `ACCEPTED` after the appropriate reviewer has approved
 
 | Milestone | Status |
 | --- | --- |
-| PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25); commit `dc5f9d2` |
-| PH00-M02 | Design `IMPLEMENTED`; acceptance **PENDING** |
+| PH00-M01 | **`ACCEPTED`**; commit `dc5f9d2` |
+| PH00-M02 | **`ACCEPTED`**; commit `6ecbbaf` |
+| PH00-M03 | **`ACCEPTED` WITH WAIVER** (D-020); commit `a99ad5e` |
+| PH00-M04 | `VALIDATED` engineering; TL acceptance PENDING; commit NOT AUTHORIZED |
 
 Live detail: [`phase-00/execution-tracker.md`](phase-00/execution-tracker.md).
 

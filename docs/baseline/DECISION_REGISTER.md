@@ -34,6 +34,15 @@
 | D-019 | Mobile API base URL via `--dart-define=API_BASE_URL` | `ACCEPTED` | — | 2026-11-25 | |
 | D-020 | PH00-M03 ACCEPTED WITH WAIVER (F-M03-001 Retry interactive) | `ACCEPTED` | [CR-20261125-B](../change-requests/CR-20261125-m03-retry-waiver.md) | 2026-11-25 | Retry not PASS/VERIFIED; regression still required |
 | D-021 | Proceed to PH00-M04 after M03 local checkpoint | `ACCEPTED` | — | 2026-11-25 | M04 commit NOT AUTHORIZED; push NO-GO |
+| D-022 | M04 fitness rules as versioned dataclass catalog (`m04-provisional-1`) | `ACCEPTED` | — | 2026-11-26 | Engineering; no expert approval claimed |
+| D-023 | Fixture catalog as in-module synthetic `ExerciseDefinition` tuples (`fixture-v1`) | `ACCEPTED` | — | 2026-11-26 | No external dataset ingest |
+| D-024 | Deterministic tie-break by ascending `exercise_id` | `ACCEPTED` | — | 2026-11-26 | Selector / substitution |
+| D-025 | Structured `GenerationResult` / `ValidationIssue` domain errors | `ACCEPTED` | — | 2026-11-26 | No FastAPI coupling |
+| D-026 | Duration estimate = sets×exec + rest + transitions + warm/cool | `ACCEPTED` | — | 2026-11-26 | Estimate ≠ actual |
+| D-027 | Safety: any reported concern → REVIEW_REQUIRED (non-triage) | `ACCEPTED` | — | 2026-11-26 | Fail closed |
+| D-028 | Evaluation scenarios module + pytest gate (≥30) | `ACCEPTED` | — | 2026-11-26 | Synthetic only |
+| D-029 | PH00-M04 technical feasibility acceptance | `ACCEPTED` | — | 2026-11-26 | Provisional rules remain non-expert-approved; OI-003/005 preserved |
+| D-030 | Proceed to PH00-M05 after M04 local checkpoint; Ollama synthetic inference authorized | `ACCEPTED` | — | 2026-11-26 | M05 commit NOT AUTHORIZED; push NO-GO; paid AI NO-GO |
 
 ## D-012 ADR approval scope
 

@@ -2,9 +2,9 @@
 
 | Field | Value |
 | --- | --- |
-| Last updated | 2026-11-25 |
+| Last updated | 2026-11-26 |
 | Owner | Engineering / Tech Lead |
-| Status | Updated PH00-M02 architecture pass |
+| Status | Updated PH00-M04 tracker remediation (outstanding M03 verification refs) |
 
 ## Severity scale
 
@@ -22,7 +22,7 @@
 | R-006 | Offline data loss / dup sync | Critical | Medium | Critical | ADR-0009; M06 POC | Eng | M06 | Open |
 | R-007 | PG job queue inadequacy | Medium | Medium | Medium | ADR-0014; M07 POC | Eng | M07 | Open |
 | R-008 | Scope creep | Medium | Medium | Medium | AGENTS + CR | TL | Ongoing | Mitigating |
-| R-009 | Env drift | Low | Medium | Low | Pin M03 | Eng | M03 | Open |
+| R-009 | Env drift / clean-env reproducibility gap | Low | Medium | Low | Pin M03; track OI-016 (F-M03-003 follow-up) | Eng | M03+ | Open |
 | R-010 | Missing automated tests | Medium | High | Medium | M03 foundations | Eng | M03+ | Open |
 | R-011 | Cursor GitLab rule conflict | Low | High | Low | D-005 | Eng | Ongoing | Mitigating |
 | R-012 | M02 without baseline | Medium | Low | Medium | M01 accepted + AUTH | TL | Done | Closed |
@@ -36,8 +36,10 @@
 | R-020 | Provider availability | Medium | Medium | Medium | Fallback UX | Eng | M05 | Open |
 | R-021 | Architecture complexity creep | Medium | Medium | Medium | Minimal infra; ADR discipline | TL | M02 review | Mitigating |
 | R-022 | Local Ollama/Qwen capacity or capability insufficient | High | Medium | High | M05 measurements; app-controlled tool routing; zero-cost alts before paid | AI/TL | M05 | Open |
-| R-023 | Free-tier CI/push/notification limits surprise later | Medium | Medium | Medium | Document limits; self-hosted runners if needed; PO approval if paid | Eng | M03+ | Open |
+| R-023 | Free-tier CI/push/notification limits; hosted Actions unrun; vuln scan pending | Medium | Medium | Medium | Document limits; OI-015 (F-M03-005 hosted NOT_EXECUTED); OI-017 vuln scan | Eng | M03+ | Open |
 | R-024 | LAN Ollama outage / misconfig blocks AI POCs | Medium | Medium | Medium | Env config; health checks; deterministic fallbacks | Eng | M05 | Open |
+| R-025 | Waived M03 Retry Recovery regresses unnoticed | Medium | Medium | Medium | OI-013 / F-M03-001; D-020 — not PASS; schedule regression | Eng | Post-M03 | Open |
+| R-026 | Missing repository LICENSE blocks redistribution clarity | Medium | High | Medium | OI-014 / PH00-TB-011 / LICENSING_STATUS; PO decision | PO | Ongoing | Open |
 
 ## Closed
 

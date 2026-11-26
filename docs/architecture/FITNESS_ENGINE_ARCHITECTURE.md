@@ -3,10 +3,10 @@
 | Field | Value |
 | --- | --- |
 | Owner | Engineering + Domain Expert (rules) |
-| Version | 0.1 |
-| Status | `PROPOSED` (PH00-M02) |
-| Related | AUTH-003 §4, PO-CR-005, PH00-M04 |
-| Critical | **No invented numerical thresholds** |
+| Version | 0.2 |
+| Status | `IMPLEMENTED` (PH00-M04 technical feasibility; expert approval PENDING) |
+| Related | AUTH-003 §4, PO-CR-005, PH00-M04, PH00-TB-012 |
+| Critical | **No invented expert approvals**; provisional thresholds are fixture-only |
 
 ## 1. Role
 
@@ -16,16 +16,19 @@ Pure deterministic domain service used by Training and Coaching. Not a separate 
 
 | Component | Responsibility | Status |
 | --- | --- | --- |
-| ExerciseSelector | Filter eligible exercises by equipment/limitations/tags | Design |
-| TrainingTemplate | Template-first skeletons by goal/availability | Design |
-| SchedulePolicy | Map sessions to available days + rest | Design |
-| TrainingVolumeCalculator | Aggregate volume metrics for validation | Design |
-| IntensityPolicy | Intensity bounds placeholders | **Pending expert** |
-| SafetyPolicy | Hard stops (pain flags, contraindication tags) | Partial; thresholds pending |
-| SubstitutionPolicy | Same substitution group / constraints | Design |
-| ProgressionPolicy | Basic overload suggestions | **P1 + expert** |
-| RecoveryPolicy | Light recovery adjustments | Basic MVP; advanced deferred |
-| TrainingPlanValidator | Compose all checks → pass/fail + reasons | Design |
+| ExerciseSelector | Filter eligible exercises by equipment/limitations/tags | `IMPLEMENTED` (M04 pure domain) |
+| TrainingTemplate | Template-first skeletons by goal/availability | `IMPLEMENTED` (provisional templates) |
+| SchedulePolicy | Map sessions to available days + rest | `IMPLEMENTED` |
+| TrainingVolumeCalculator | Aggregate volume metrics for validation | `IMPLEMENTED` (provisional caps) |
+| IntensityPolicy | Intensity bounds placeholders | `IMPLEMENTED` provisional; **expert review required** |
+| SafetyPolicy | Hard stops (pain flags, contraindication tags) | `IMPLEMENTED` technical screening |
+| SubstitutionPolicy | Same substitution group / constraints | `IMPLEMENTED` |
+| ProgressionPolicy | Basic overload suggestions | **P1 + expert** (not M04) |
+| RecoveryPolicy | Light recovery adjustments | Deferred beyond soft schedule spacing |
+| TrainingPlanValidator | Compose all checks → pass/fail + reasons | `IMPLEMENTED` (independent of generator) |
+| TrainingPlanGenerator | Deterministic pipeline → draft | `IMPLEMENTED` (no LLM) |
+
+Code root: `services/backend/app/modules/fitness_engine/domain/` (+ `exercise_catalog`). See also [`EXERCISE_SCHEMA_AND_CATALOG_M04.md`](EXERCISE_SCHEMA_AND_CATALOG_M04.md), [`TRAINING_PLAN_DRAFT_CONTRACT_M04.md`](TRAINING_PLAN_DRAFT_CONTRACT_M04.md), [`SAFETY_POLICY_M04.md`](SAFETY_POLICY_M04.md), [`../business-rules/FITNESS_BUSINESS_RULES_M04.md`](../business-rules/FITNESS_BUSINESS_RULES_M04.md).
 
 ## 3. Constraint classes
 

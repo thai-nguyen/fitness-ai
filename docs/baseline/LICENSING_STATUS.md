@@ -22,7 +22,7 @@ Existing source-code ownership is preserved until a license is chosen.
 | Application source-code licensing | **PENDING** PO selection |
 | Third-party dependency licensing | Track via lockfiles (`requirements.lock.txt`, `pubspec.lock`); review before distribution |
 | AI model licensing (e.g. Qwen) | **PENDING** separate assessment before production (M05+) |
-| Exercise content licensing | **PENDING** (OI-005 / M04) |
+| Exercise content licensing | **PENDING** production (OI-005); M04 uses **original synthetic fixtures only** (see `docs/architecture/EXERCISE_SCHEMA_AND_CATALOG_M04.md`) — external datasets **not ingested** |
 
 ## PH00-TB-011 split
 

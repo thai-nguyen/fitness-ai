@@ -20,17 +20,20 @@ Long-term vision references market quality bars (coaching depth, simplicity, eng
 | PH00-M01 | **`ACCEPTED`** (Tech Lead 2026-11-25); local commit `dc5f9d2` |
 | PH00-M02 | **`ACCEPTED`**; local commit `6ecbbaf` |
 | PH00-M03 | **`ACCEPTED` WITH WAIVER** (PO D-020 / CR-20261125-B); F-M03-001 Retry not VERIFIED |
-| Current authorized milestone | **PH00-M04** — Fitness Engine Feasibility |
-| PH00-M03 local commit | **AUTHORIZED** (after validation); push **NO-GO** |
-| PH00-M04 commit | **NOT AUTHORIZED** |
-| PH00-M05+ | **NO-GO** until respective authorization |
+| PH00-M04 | **`ACCEPTED`** (technical feasibility; provisional rules / OI-003 / OI-005 preserved) |
+| Current authorized milestone | **PH00-M05** — AI Technical POCs (after M04 local checkpoint) |
+| PH00-M03 local commit | `a99ad5ef7aced1e4c4fa970d314fa3048dc84885` (done); push **NO-GO** |
+| PH00-M04 local commit | **AUTHORIZED** after validation; push **NO-GO** |
+| PH00-M05 commit | **NOT AUTHORIZED** |
+| PH00-M06+ | **NO-GO** until respective authorization |
 | Production feature development | **NO-GO** |
 | Unapproved infrastructure commitments | **NO-GO** |
 | Paid services / paid AI APIs | **NOT AUTHORIZED** |
+| Ollama inference | **AUTHORIZED** for synthetic M05 data only |
 
-Authorized now: PH00-M03 foundation bootstrap (Flutter → FastAPI → PostgreSQL), local Compose, CI workflow definitions, docs/tests within Zero-Cost First / Local AI First.
+Authorized now: PH00-M04 local checkpoint then PH00-M05 AI POCs (Zero-Cost First / Local AI First; Ollama synthetic only).
 
-Not authorized now: M03 git commit/push, M04+, production features, paid cloud/AI, AI chat/benchmarks (M05), domain product features.
+Not authorized now: M05 git commit/push, M06+, production features, paid cloud/AI, Drift/offline (M06), production fitness guidance.
 
 ## 3. Repository documentation index
 

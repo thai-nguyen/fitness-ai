@@ -201,11 +201,11 @@
 | Description | Define exercise catalog schema, training templates, fitness constraints, deterministic validation interfaces |
 | Priority | P0 |
 | Dependencies | PH00-TB-008 |
-| Deliverables | Schema/contracts docs; pending expert-rule list |
+| Deliverables | Schema/contracts docs; pending expert-rule list; pure-domain engine + tests |
 | Acceptance criteria | Interfaces defined; expert-pending rules explicitly listed; no invented medical approvals |
 | Responsible role | Engineering |
 | Required reviewer | Tech Lead (+ Domain Expert for rules) |
-| Status | `NOT_STARTED` |
+| Status | `ACCEPTED` (technical feasibility; expert rule approval still OI-003 — not EXPERT_APPROVED) |
 
 ### PH00-TB-013
 
@@ -220,7 +220,7 @@
 | Acceptance criteria | Sources listed; license risk rated; go/no-go for content use |
 | Responsible role | Product Owner / Legal (+ Engineering support) |
 | Required reviewer | Tech Lead / Legal |
-| Status | `NOT_STARTED` |
+| Status | `ACCEPTED` for M04 technical assessment (synthetic fixtures only); production content go/no-go still OI-005; app LICENSE still OI-014 |
 
 ### PH00-TB-014
 
@@ -235,7 +235,7 @@
 | Acceptance criteria | Real measurements; no paid AI APIs; LLM cannot mutate DB; safety eval executed; zero-cost alts considered before any paid proposal |
 | Responsible role | Engineering (AI Systems) |
 | Required reviewer | Tech Lead |
-| Status | `NOT_STARTED` |
+| Status | `IN_PROGRESS` |
 
 ### PH00-TB-015
 

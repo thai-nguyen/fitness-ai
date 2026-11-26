@@ -3,22 +3,31 @@
 | Field | Value |
 | --- | --- |
 | Phase | PHASE-00 |
-| Tracker version | 2.0 |
-| Last updated | 2026-11-25 |
-| Updated by | Engineering (PH00-M03 ACCEPTED WITH WAIVER; M04 GO) |
-| Current authorized milestone | **PH00-M04** — Fitness Engine Feasibility |
+| Tracker version | 2.1 |
+| Last updated | 2026-11-26 |
+| Updated by | Engineering (PH00-M04 ACCEPTED technical feasibility; M05 GO) |
+| Current authorized milestone | **PH00-M05** — AI Technical POCs |
 | PH00-M02 | **`ACCEPTED`** |
 | PH00-M03 | **`ACCEPTED` WITH WAIVER** (PO D-020 / CR-20261125-B) |
+| PH00-M04 | **`ACCEPTED`** (technical feasibility; provisional rules remain unapproved) |
 | M01 local commit | `dc5f9d2` |
 | M02 local commit | `6ecbbaf4b24c0704c458290076f1b67086bbde53` |
-| M03 local commit | Record SHA after authorized commit |
-| M04 commit | **NOT AUTHORIZED** |
+| M03 local commit | `a99ad5ef7aced1e4c4fa970d314fa3048dc84885` — feat: establish engineering foundation and close PH00-M03 |
+| M04 local commit | Pending this checkpoint — then M05 GO |
+| M05 commit | **NOT AUTHORIZED** |
 | Git push | **NO-GO** |
 | Overall phase status | `IN_PROGRESS` |
 
 ## Status legend
 
 `NOT_STARTED` · `IN_PROGRESS` · `BLOCKED` · `IMPLEMENTED` · `VALIDATED` · `ACCEPTED` · `DEFERRED`
+
+### Acceptance qualifier — `ACCEPTED` WITH WAIVER
+
+- **`ACCEPTED`** remains the canonical milestone status.
+- **WITH WAIVER** is an acceptance *qualifier*, not a separate status vocabulary value.
+- Waived verification items must **not** be reported as `PASS` or `VERIFIED`.
+- Future regression / follow-up verification requirements remain applicable after acceptance.
 
 ---
 
@@ -33,7 +42,7 @@
 | Remaining M01 blockers | **None reported** |
 | Findings | F-M01-001..006 all `ACCEPTED` |
 | Next milestone | PH00-M02 — Architecture & Domain Modelling |
-| Next milestone authorization | **PENDING** |
+| Next milestone authorization (historical snapshot at M01 close) | Was **PENDING** when M01 closed; **superseded** — PH00-M02 is now **`ACCEPTED`** (see M02 section). Current authorized milestone is **PH00-M04** (header). |
 | Started | 2026-11-25 |
 | Remediation / closure | 2026-11-25 |
 
@@ -165,19 +174,24 @@
 
 | Field | Value |
 | --- | --- |
-| Status | `IN_PROGRESS` |
-| Authorization | **GO** after M03 local checkpoint (D-021) |
+| Status | **`ACCEPTED`** (technical feasibility; PO 2026-11-26) |
+| Accepted scope | Deterministic fitness-engine technical feasibility only |
+| Explicitly not accepted | Expert fitness approval; production content licensing; production prescriptions |
+| Preserved open items | OI-003, OI-005, OI-013..017; provisional rules remain non-EXPERT_APPROVED |
 | Depends on | M03 `ACCEPTED`; domain contracts from M02 |
-| Commit | **NOT AUTHORIZED** |
+| Completion report | [`PH00-M04-completion-report.md`](PH00-M04-completion-report.md) |
+| Remediation report | [`PH00-M04-remediation-report.md`](PH00-M04-remediation-report.md) |
+| Commit | Local commit authorized after validation; push **NO-GO** |
+| Tracker remediation | F-TRK-001..005 **accepted** / preserved (OI-013..017) |
 
 ### Planned outcomes
 
-- Exercise catalog schema
-- Approved training template structure
-- Fitness constraints
-- Deterministic validation interfaces
-- Content source / licensing assessment
-- Business rules requiring domain expert approval
+- [x] Exercise catalog schema
+- [x] Provisional training template structure
+- [x] Fitness constraints (provisional + technical invariants)
+- [x] Deterministic validation interfaces
+- [x] Content source / licensing assessment (synthetic fixtures; external UNVERIFIED)
+- [x] Business rules requiring domain expert approval explicitly listed (OI-003)
 
 ---
 
@@ -185,9 +199,11 @@
 
 | Field | Value |
 | --- | --- |
-| Status | `NOT_STARTED` |
-| Authorization | Blocked until prior milestone acceptance |
-| Depends on | Fitness validation interfaces (M04); synthetic datasets |
+| Status | `IN_PROGRESS` |
+| Authorization | **GO** after M04 local checkpoint (D-030); Ollama synthetic inference AUTHORIZED |
+| Depends on | M04 `ACCEPTED`; Fitness validation interfaces; synthetic datasets |
+| Commit | **NOT AUTHORIZED** |
+| Paid AI / push / M06+ | **NO-GO** |
 
 ### Planned outcomes
 
@@ -209,7 +225,7 @@
 | --- | --- |
 | Status | `NOT_STARTED` |
 | Authorization | Blocked until prior milestone acceptance |
-| Depends on | Flutter/Drift foundation (M03); session lifecycle (M02) |
+| Depends on | Flutter engineering foundation from M03 (app bootstrap / Clean Architecture walking skeleton — **Drift not implemented in M03**); Drift/local persistence to be implemented in M06; session lifecycle contracts from M02 |
 
 ### Planned outcomes
 
@@ -288,7 +304,7 @@
 
 ## Cross-cutting open items
 
-See also [`../baseline/OPEN_ISSUES.md`](../baseline/OPEN_ISSUES.md).
+See also [`../baseline/OPEN_ISSUES.md`](../baseline/OPEN_ISSUES.md) and [`../risks/RISK_REGISTER.md`](../risks/RISK_REGISTER.md).
 
 | ID | Item | Severity | Owner | Status |
 | --- | --- | --- | --- | --- |
@@ -299,6 +315,11 @@ See also [`../baseline/OPEN_ISSUES.md`](../baseline/OPEN_ISSUES.md).
 | OI-005 | Exercise content licensing | High | PO / Legal | `OPEN` (M04) |
 | OI-006 | External Cursor GitLab rule vs GitHub workflow | Medium | Tech Lead | `OPEN` (documented in AGENTS.md) |
 | OI-007 | Derived vs AUTH consistency unverified | High | Engineering | `RESOLVED` |
+| OI-013 | M03 interactive Retry Recovery verification (F-M03-001) | Medium | Eng / PO | `OPEN` — waived for M03 accept (D-020); **not** PASS; regression still required |
+| OI-014 | Repository LICENSE pending owner decision (F-M03-004 / PH00-TB-011) | Medium | PO | `OPEN` — see `LICENSING_STATUS.md` |
+| OI-015 | Hosted GitHub Actions execution not performed (F-M03-005) | Low | Eng | `OPEN` — workflow files present; hosted run `NOT_EXECUTED` |
+| OI-016 | Clean-environment dependency reproducibility follow-up (F-M03-003) | Low | Eng | `OPEN` — review done; clean-env re-verify pending |
+| OI-017 | Dependency vulnerability scanning pending | Low | Eng | `OPEN` — not run in M03; track for later gate |
 
 ## Change log
 
@@ -314,3 +335,5 @@ See also [`../baseline/OPEN_ISSUES.md`](../baseline/OPEN_ISSUES.md).
 | 2026-11-25 | M02 design submitted; Tech Lead PASS WITH CONDITIONS; F-M02-001..006 remediated; ADR actual count **17**; M02 final accept PENDING; M03 NO-GO; no M02 commit; tracker v1.7 |
 | 2026-11-25 | PH00-M02 **ACCEPTED**; PO ADR approval; F-M02-001..006 `ACCEPTED`; foundation ADRs 0002–0005 accepted; direction 0006–0010/0012; M03 GO after checkpoint; tracker v1.8 |
 | 2026-11-25 | M02 local commit `6ecbbaf`; PH00-M03 Walking Skeleton implemented/validated; completion report submitted; M03 commit NOT AUTHORIZED; M04 NO-GO; tracker v1.9 |
+| 2026-11-25 | Tracker **v2.0**: PH00-M03 **`ACCEPTED` WITH WAIVER** (PO D-020 / CR-20261125-B); M03 local commit `a99ad5ef7aced1e4c4fa970d314fa3048dc84885`; PH00-M04 authorization **GO** (D-021); Git push **NO-GO**; M04 commit NOT AUTHORIZED |
+| 2026-11-26 | Tracker **v2.1**: PH00-M04 technical feasibility **`ACCEPTED`** (PO); F-M04-001..008 remediated; provisional rules/OI-003/OI-005/OI-013..017 preserved; M05 **GO** after M04 local checkpoint; M05 commit NOT AUTHORIZED; push **NO-GO** |
